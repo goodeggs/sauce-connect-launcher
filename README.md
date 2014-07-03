@@ -50,7 +50,7 @@ var sauceConnectLauncher = require('sauce-connect-launcher'),
     accessKey: '12345678-1234-1234-1234-1234567890ab',
 
     // Log output from the `sc` process to stdout?
-    verbose: false,
+    stdout: false,
 
     // Port on which Sauce Connect's Selenium relay will listen for
     // requests. Default 4445. (optional)
@@ -73,6 +73,12 @@ var sauceConnectLauncher = require('sauce-connect-launcher'),
     // an array or comma-separated list of domains that will not go
     // through the tunnel. (optional)
     directDomains: null,
+
+    // Run Sauce Connect in verbose (-v) mode?
+    verbose: false,
+
+    // Run Sauce Connect in doctor (--doctor) mode?
+    doctor: false,
 
     // A function to optionally write sauce-connect-launcher log messages.
     // e.g. `console.log`.  (optional)
